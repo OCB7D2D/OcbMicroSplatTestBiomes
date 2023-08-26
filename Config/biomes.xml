@@ -1,0 +1,162 @@
+<configs patcher-version="5">
+	<!-- Using new advanded feature of my custom dynamic xml patcher -->
+	<!-- check the referenced includes by `path` and you should get the idea -->
+	<!-- otherwise you can always just check the `ConfigsDump` to see it flat -->
+
+	<!-- add gold ore vein if voxel mod is found -->
+	<modif condition="OcbMicroSplatOreVoxels">
+		<include
+			path="biome.tmpl.xml"
+			tmpl-mapcolor="#80FFFF"
+			tmpl-biome-id="41"
+			tmpl-biome-name="test_biome_dirt"
+			tmpl-name="test_biome_dirt"
+			tmpl-block="ocbTerrDirt"
+			tmpl-modifier="0.75"
+			tmpl-bonus="15"
+			tmpl-difficulty="3"
+			tmpl-ore-block="terrOreGold"
+			tmpl-deco-vein="deco_gold_vein"
+			tmpl-map-only="Test Biomes"
+		/>
+	</modif>
+	<modelse>
+		<include
+			path="biome.tmpl.xml"
+			tmpl-mapcolor="#80FFFF"
+			tmpl-biome-id="41"
+			tmpl-biome-name="test_biome_dirt"
+			tmpl-name="test_biome_dirt"
+			tmpl-block="ocbTerrDirt"
+			tmpl-modifier="0.75"
+			tmpl-bonus="15"
+			tmpl-difficulty="3"
+			tmpl-ore-block="terrOreIron"
+			tmpl-deco-vein="deco_iron_vein"
+			tmpl-map-only="Test Biomes"
+		/>
+	</modelse>
+
+	<include
+		path="biome.tmpl.xml"
+		tmpl-mapcolor="#FF6600"
+		tmpl-biome-id="42"
+		tmpl-biome-name="test_biome_grass"
+		tmpl-name="test_biome_grass"
+		tmpl-block="ocbTerrGrass"
+		tmpl-modifier="0.35"
+		tmpl-bonus="10"
+		tmpl-difficulty="2"
+		tmpl-ore-block="terrOreIron"
+		tmpl-deco-vein="deco_iron_vein"
+		tmpl-map-only="Test Biomes"
+	/>
+
+	<include
+		path="biome.tmpl.xml"
+		tmpl-mapcolor="#FF40FF"
+		tmpl-biome-id="43"
+		tmpl-biome-name="test_biome_pasture"
+		tmpl-name="test_biome_pasture"
+		tmpl-block="ocbTerrPasture"
+		tmpl-modifier="0.25"
+		tmpl-bonus="5"
+		tmpl-difficulty="2"
+		tmpl-ore-block="terrOreIron"
+		tmpl-deco-vein="deco_iron_vein"
+		tmpl-map-only="Test Biomes"
+	/>
+
+	<modif condition="OcbCustomSpectrums">
+		<append xpath="/worldgeneration/biomes">
+			<!-- add a new global weather spectrum -->
+			<!-- used in only one biome weather group -->
+			<spectrum name="DirtyRain">
+				<!-- times here will only match in-game time if day length is 12h -->
+				<!-- will be correctly shifted in-game if setting there is different -->
+				<gradient type="sky">
+					<step time="4" color="0,0,255,255"/>
+					<step time="5.99999" color="0,0,255,255"/>
+					<step time="6" color="255,255,0,255"/>
+					<step time="18" color="255,255,0,255"/>
+					<step time="18.00001" color="0,0,255,255"/>
+					<step time="20" color="0,0,255,255"/>
+				</gradient>
+			</spectrum>
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='test_biome_dirt']">
+			<!-- add a custom biome specific spectrum -->
+			<!-- this only is possible for default biome weather -->
+			<!-- weather groups inside only can reference global weather -->
+			<!-- don't ask me why, it's just how TFP have set this up -->
+			<!-- types are: fog, rain, snow, storm, bloodMoon -->
+			<!-- Untested: those also exist with `twitch_` prefix -->
+
+			<!-- albedo color of the sky hemisphere -->
+			<!-- also seems to serve for ambient color -->
+			<biome-spectrum type="sky" variant="gradient">
+				<step time="5.00" color="0,0,0,255"/>
+				<step time="6.00" color="91,174,255,255"/>
+				<step time="10.00" color="69,106,255,255"/>
+				<step time="11.00" color="63,97,255,255"/>
+				<step time="15.00" color="63,97,255,255"/>
+				<step time="15.50" color="77,105,255,255"/>
+				<step time="16.00" color="111,124,255,255"/>
+				<step time="16.50" color="148,144,255,255"/>
+				<step time="17.50" color="220,144,255,255"/>
+				<step time="18.00" color="154,87,154,255"/>
+				<step time="19.00" color="0,0,0,255"/>
+			</biome-spectrum>
+			<!-- ambient color seems unused currently -->
+			<!-- the sky color also gives ambient color -->
+			<biome-spectrum type="ambient" variant="gradient">
+				<step time="2.00" color="2,2,2,159"/>
+				<step time="6.00" color="18,18,18,159"/>
+				<step time="17.00" color="18,18,18,159"/>
+				<step time="20.00" color="2,2,2,159"/>
+			</biome-spectrum>
+			<!-- color of the sun directional light -->
+			<biome-spectrum type="sun" variant="gradient">
+				<step time="3.50" color="168,200,255,255"/>
+				<step time="6.00" color="255,188,114,255"/>
+				<step time="7.00" color="206,186,166,255"/>
+				<step time="7.25" color="202,186,170,255"/>
+				<step time="16.75" color="202,186,170,255"/>
+				<step time="18.00" color="255,149,114,255"/>
+				<step time="18.50" color="255,111,54,255"/>
+				<step time="19.25" color="168,200,255,255"/>
+			</biome-spectrum>
+			<!-- color of the moon directional light -->
+			<biome-spectrum type="moon" variant="gradient">
+				<step time="0" color="42,47,57,255"/>
+			</biome-spectrum>
+			<biome-spectrum type="fog" variant="gradient">
+				<step time="5.50" color="55,55,55,32"/>
+				<step time="6.00" color="154,144,122,33"/>
+				<step time="11.00" color="144,134,149,33"/>
+				<step time="15.00" color="144,134,149,34"/>
+				<step time="16.50" color="136,134,138,33"/>
+				<step time="18.00" color="154,130,118,33"/>
+				<step time="18.75" color="55,55,55,30"/>
+			</biome-spectrum>
+
+			<biome-spectrum type="fogfade" variant="gradient">
+				<step time="0.0" color="133,96,62,26"/>
+			</biome-spectrum>
+		</append>
+		<append xpath="/worldgeneration/biomes/biome[@name='test_biome_dirt']/weather[
+			contains(@name, 'rain') or contains(@name, 'snow') or contains(@name, 'fog')]">
+			<spectrum name="DirtyRain"/>
+		</append>
+	</modif>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='test_biome_dirt']/weather[@name='default']">
+		<ParticleEffect prefab="#@modfolder:Resources/Particles.unity3d?p_sandstorm" ChunkMargin="3"/>
+		<ParticleEffect prefab="#@modfolder:Resources/Particles.unity3d?p_dustdevil" ChunkMargin="12"/>
+	</append>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest' or
+				@name='test_biome_grass' or @name='test_biome_pasture']/weather[@name='default']">
+		<ParticleEffect prefab="#@modfolder:Resources/Particles.unity3d?p_fireflies" ChunkMargin="9"/>
+	</append>
+</configs>

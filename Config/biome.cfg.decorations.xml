@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/worldgeneration/biomes/biome[@name='{{biome-name}}']">
+		<!-- *** Decorations Main  -->
+		<decorations>
+			<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
+			<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
+			<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+			<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
+			<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
+			<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>
+			<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="rock01" prob=".001"/>
+			<decoration type="block" blockname="rock02" prob=".001"/>
+			<decoration type="block" blockname="cntBirdnest" prob="0.001"/>
+			<decoration type="block" blockname="treeDeadPineLeaf" prob="0.007" rotatemax="7"/>
+			<decoration type="block" blockname="plantShrub" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeJuniper4m" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine12m" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine19m" prob="0.0015" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine27m" prob="0.002" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine31m" prob="0.002" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPineDry21m" prob="0.002" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine41m" prob="0.004" rotatemax="7"/>
+			<decoration type="block" blockname="plantedSnowberry3Harvest" prob=".001" rotatemax="7"/>
+			<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeOakLrg01" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeOakMed01" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeOakMed02" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeOakSml01" prob="0.001" rotatemax="7"/>
+			<decoration type="block" blockname="treeFirLrg01" prob="0.0005" rotatemax="7"/>
+			<decoration type="block" blockname="treeMountainPine48m" prob="0.0005" rotatemax="7"/>
+			<decoration type="block" blockname="treeStump" prob=".0002" rotatemax="7"/>
+			<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4"/>
+			<decoration type="block" blockname="treeShortGrass" prob=".8"/>
+		</decorations>
+	</append>
+</configs>

@@ -1,0 +1,164 @@
+<configs>
+	<append xpath="/worldglobal">
+		<!-- Setup voxels to use certain textures -->
+		<!-- Can optionally blend multiple textures -->
+		<microsplat-voxel name="voxel1">
+			<texture name="custom1" weight="1"/>
+		</microsplat-voxel>
+		<microsplat-voxel name="voxel2">
+			<texture name="custom2" weight="1"/>
+		</microsplat-voxel>
+		<microsplat-voxel name="voxel3">
+			<texture name="custom3" weight="1"/>
+		</microsplat-voxel>
+
+		<microsplat-texture name="custom1">
+			<!-- Pebble Stones -->
+			<property name="Diffuse" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_diff_tarray[0]"/>
+			<property name="Normal" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_norm_tarray[0]"/>
+			<property name="Specular" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_shao_tarray[0]"/>
+			<!-- <property name="SwitchNormal" value="true"/> -->
+			<property name="SplatUVScale" value="4,4"/>
+		</microsplat-texture>
+
+		<microsplat-texture name="custom2">
+			<!-- Wood Roots -->
+			<property name="Diffuse" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_diff_tarray[1]"/>
+			<property name="Normal" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_norm_tarray[1]"/>
+			<property name="Specular" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_shao_tarray[1]"/>
+			<!-- <property name="SwitchNormal" value="true"/> -->
+			<property name="SplatUVScale" value="4,4"/>
+		</microsplat-texture>
+
+		<microsplat-texture name="custom3">
+			<!-- Green Terrain -->
+			<property name="Diffuse" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_diff_tarray[2]"/>
+			<property name="Normal" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_norm_tarray[2]"/>
+			<property name="Specular" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_shao_tarray[2]"/>
+			<!-- <property name="SwitchNormal" value="true"/> -->
+			<property name="SplatUVScale" value="3,3"/>
+		</microsplat-texture>
+
+		<microsplat-texture name="custom4">
+			<!-- Grassy Terrain -->
+			<property name="Diffuse" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_diff_tarray[3]"/>
+			<property name="Normal" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_norm_tarray[3]"/>
+			<property name="Specular" value="#@modfolder:Resources/TestBiomes.unity3d?TestBiomes_shao_tarray[3]"/>
+			<!-- <property name="SwitchNormal" value="true"/> -->
+			<property name="SplatUVScale" value="3,3"/>
+		</microsplat-texture>
+
+		<biomes-config world="Test Biomes">
+			<!-- instruct mod to paint these into the biome masks -->
+			<!-- this maps back to how shader biome layers are setup -->
+			<!-- corresponds to data found in splat3 and splat4 images -->
+			<biome-color name="test_biome_dirt" color1="0,0,0,0" color2="0,1,0,0"/>
+			<biome-color name="test_biome_grass" color1="0,0,0,0" color2="0,0,1,0"/>
+			<biome-color name="test_biome_pasture" color1="0,0,0,0" color2="0,0,0,1"/>
+
+			<!-- update cliff to show also for Biome 6 to 8 -->
+			<biome-layer name="Layer0">
+				<!-- Reuse snow biome cliff layer to reuse -->
+				<property name="biome-weight-6" value="1.0"/>
+				<property name="biome-weight-7" value="1.0"/>
+				<property name="biome-weight-8" value="1.0"/>
+			</biome-layer>
+
+			<biome-layer name="biome6a">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="1.0"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="custom1"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-6" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+
+			<biome-layer name="biome7a">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="1.0"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="custom2"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-7" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+
+			<biome-layer name="biome8a">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="0.6"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="custom3"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-8" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+
+			<biome-layer name="biome8b">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="0.6"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="true"/>
+				<property name="noise-frequency" value="10.5"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="-0.45,0.35"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="custom4"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-8" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+		</biomes-config>
+	</append>
+</configs>

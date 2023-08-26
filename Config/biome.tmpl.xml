@@ -1,0 +1,37 @@
+<configs patcher-version="5">
+	<append xpath="/worldgeneration/biomes">
+		<!-- Define new biome id for test biome -->
+		<!-- Hock new ids up in worldglobal.xml -->
+		<biomemap id="{{biome-id}}" name="{{biome-name}}" map-only="{{map-only}}"/>
+	</append>
+	<append xpath="/worldgeneration/biomes">
+		<!-- Add a new biome (make sure your biomes.png includes the exact biomemapcolor)-->
+		<!-- Note: weather is added once for all test biomes in main config file-->
+		<biome
+			name="{{name}}"
+			topsoil_block="{{block}}"
+			map-only="{{map-only}}"
+			biomemapcolor="{{mapcolor}}"
+			lootstage_modifier="{{modifier}}"
+			lootstage_bonus="{{bonus}}"
+			gamestage_modifier="{{modifier}}"
+			gamestage_bonus="{{bonus}}"
+			difficulty="{{difficulty}}"
+		>
+			<layers>
+				<!-- place custom top soil block -->
+				<layer depth="1" blockname="{{block}}"/>
+				<layer depth="3" blockname="terrDirt"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="{{ore-block}}" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+		</biome>
+	</append>
+	<!-- include generic weather configs -->
+	<include path="biome.cfg.weathers.xml"/>
+	<include path="biome.cfg.subbiomes.xml"/>
+	<include path="biome.cfg.decorations.xml"/>
+</configs>

@@ -1,0 +1,7 @@
+Key,english
+test_biome_dirt,Test Biome Dirt
+test_biome_grass,Test Biome Grass
+test_biome_pasture,Test Biome Pasture
+ocbTerrDirt,Dirt
+ocbTerrGrass,Grass
+ocbTerrPasture,Pasture

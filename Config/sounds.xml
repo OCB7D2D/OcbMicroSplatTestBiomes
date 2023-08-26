@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/Sounds">
+		<!-- Register our sound node for the dust devil particle effect -->
+		<!-- Using the `AudioPlayer` script to properly play and pause it -->
+		<SoundDataNode name="DustDevil">
+			<AudioSource name="#@modfolder:Resources/Particles.unity3d?a_dustdevil"/>
+			<AudioClip ClipName="#@modfolder:Resources/Particles.unity3d?TornadoSfx"/>
+		</SoundDataNode>
+	</append>
+</configs>

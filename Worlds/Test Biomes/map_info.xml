@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MapInfo>
+  <property name="Scale" value="1" />
+  <property name="HeightMapSize" value="4096,4096" />
+  <property name="Modes" value="Survival,SurvivalSP,SurvivalMP,Creative" />
+  <property name="FixedWaterLevel" value="false" />
+  <property name="RandomGeneratedWorld" value="true" />
+  <property name="GameVersion" value="Alpha.21.1.16" />
+  <property name="Generation.Seed" value="ocb" />
+  <property name="Generation.Towns" value="Many" />
+  <property name="Generation.Wilderness" value="Default" />
+  <property name="Generation.Lakes" value="Default" />
+  <property name="Generation.Rivers" value="Default" />
+  <property name="Generation.Cracks" value="Default" />
+  <property name="Generation.Craters" value="Default" />
+  <property name="Generation.Plains" value="6" />
+  <property name="Generation.Hills" value="6" />
+  <property name="Generation.Mountains" value="3" />
+  <property name="Generation.Snow" value="4" />
+  <property name="Generation.Forest" value="7" />
+  <property name="Generation.Desert" value="4" />
+  <property name="Generation.Wasteland" value="3" />
+</MapInfo>

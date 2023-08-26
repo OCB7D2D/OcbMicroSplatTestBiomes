@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SandStormMat
+  m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords:
+  - _ALPHABLEND_ON
+  - _EMISSION
+  - _FADING_ON
+  - _NORMALMAP
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - GRABPASS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 276889aad7c9cc240abe2df370a911f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: da702f126fd57ac4888d0c7130c926e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: da702f126fd57ac4888d0c7130c926e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BlendOp: 0
+    - _BumpScale: 0.125
+    - _CameraFadingEnabled: 1
+    - _CameraFarFadeDistance: 15
+    - _CameraNearFadeDistance: 2.5
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 0.25
+    - _DistortionStrengthScaled: 0.025
+    - _DstBlend: 10
+    - _EmissionEnabled: 1
+    - _FlipbookMode: 0
+    - _Glossiness: 0.05
+    - _InvFade: 0.25
+    - _LightingEnabled: 1
+    - _Metallic: 0.025
+    - _Mode: 2
+    - _SoftParticlesEnabled: 1
+    - _SoftParticlesFarFadeDistance: 0.75
+    - _SoftParticlesNearFadeDistance: 0.25
+    - _SrcBlend: 5
+    - _ZWrite: 0
+    m_Colors:
+    - _CameraFadeParams: {r: 2.5, g: 0.08, b: 0, a: 0}
+    - _Color: {r: 0.6698113, g: 0.4105186, b: 0.14323002, a: 1}
+    - _EmissionColor: {r: 0.056862745, g: 0.029411765, b: 0, a: 1}
+    - _SoftParticleFadeParams: {r: 0.25, g: 2, b: 0, a: 0}
+    - _TintColor: {r: 0.6037736, g: 0.241357, b: 0.0037972433, a: 0.07058824}
+  m_BuildTextureStacks: []
+--- !u!1002 &2100001
+EditorExtensionImpl:
+  serializedVersion: 6

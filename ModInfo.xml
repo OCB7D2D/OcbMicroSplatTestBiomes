@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OcbMicroSplatTestBiomes" />
+	<DisplayName value="OCB MicroSplat Custom Biomes Demo" />
+	<Description value="Demo for OcbMicroSplat custom biome features." />
+	<Website value="https://github.com/OCB7D2D/OcbMicroSplatTestBiomes" />
+	<Author value="ocbMaurice" />
+	<Version value="0.1.0"/>
+</xml>

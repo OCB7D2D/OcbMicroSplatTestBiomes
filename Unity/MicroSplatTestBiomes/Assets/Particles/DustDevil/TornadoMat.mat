@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TornadoMat
+  m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords:
+  - _ALPHABLEND_ON
+  - _EMISSION
+  - _FADING_ON
+  - _NORMALMAP
+  m_InvalidKeywords:
+  - _COLORADDSUBDIFF_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - GRABPASS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 276889aad7c9cc240abe2df370a911f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: fbb3af46cdc10ea489cd7e3c8abd2570, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: fbb3af46cdc10ea489cd7e3c8abd2570, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BlendOp: 0
+    - _BumpScale: 0.075
+    - _CameraFadingEnabled: 1
+    - _CameraFarFadeDistance: 0.75
+    - _CameraNearFadeDistance: 0.25
+    - _ColorMode: 2
+    - _Cull: 2
+    - _Cutoff: 0.047
+    - _DetailNormalMapScale: 1
+    - _DistortionBlend: 0
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 2.59
+    - _DistortionStrengthScaled: 0.259
+    - _DstBlend: 10
+    - _EmissionEnabled: 1
+    - _FlipbookMode: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.015
+    - _GlossyReflections: 1
+    - _InvFade: 3
+    - _LightingEnabled: 1
+    - _Metallic: 0.05
+    - _Mode: 2
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Shininess: 0.7
+    - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 1
+    - _SoftParticlesFarFadeDistance: 1.5
+    - _SoftParticlesNearFadeDistance: 0.25
+    - _SpecularHighlights: 1
+    - _SrcBlend: 5
+    - _UVSec: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _CameraFadeParams: {r: 0.25, g: 2, b: 0, a: 0}
+    - _Color: {r: 0.5849056, g: 0.47753644, b: 0.15818197, a: 0.5019608}
+    - _ColorAddSubDiff: {r: -1, g: 0, b: 0, a: 0}
+    - _EmisColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0.066037714, g: 0.036973197, b: 0.023985395, a: 0}
+    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _SoftParticleFadeParams: {r: 0.25, g: 0.8, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TintColor: {r: 0.11764705, g: 0.11764705, b: 0.11764705, a: 0.5}
+  m_BuildTextureStacks: []

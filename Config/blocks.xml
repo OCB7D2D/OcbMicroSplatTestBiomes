@@ -1,0 +1,36 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="ocbTerrDirt" map-only="Test Biomes">
+			<property name="Extends" value="terrDirt"/>
+			<property name="TerrainIndex" value="custom1"/>
+			<property name="MicroSplatVoxel" value="voxel1"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+			<property name="Map.Color" value="158,102,48"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0550"/>
+		</block>
+
+		<block name="ocbTerrGrass" map-only="Test Biomes">
+			<property name="Extends" value="terrDirt"/>
+			<property name="TerrainIndex" value="custom2"/>
+			<property name="MicroSplatVoxel" value="voxel2"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+			<property name="Map.Color" value="58,142,32"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0550"/>
+		</block>
+
+		<block name="ocbTerrPasture" map-only="Test Biomes">
+			<property name="Extends" value="terrDirt"/>
+			<property name="TerrainIndex" value="custom3"/>
+			<property name="MicroSplatVoxel" value="voxel3"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+			<property name="Map.Color" value="118,158,48"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0550"/>
+		</block>
+	</append>
+</configs>

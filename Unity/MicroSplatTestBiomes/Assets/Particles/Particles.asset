@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9aafab5ec24e3a468cbf65f5c7e23b0, type: 3}
+  m_Name: Particles
+  m_EditorClassIdentifier: 
+  Path: ..\..\..\Resources\Particles.unity3d
+  IncludeAssetsFromFolders: 0
+  SearchFoldersRecursively: 0
+  CreateDeterministicAssetBundle: 1
+  AppendHashToAssetBundleName: 1
+  Compression: 1
+  VerboseLogging: 0
+  ShowPlatformTargets: 0
+  StandaloneWindows: 1
+  StandaloneMacOSX: 0
+  StandaloneLinux: 0
+  StripRedundantAPIs: 1
+  WantD3D11: 1
+  WantOpenGL: 1
+  WantVulkan: 1
+  WantMetal: 1
+  SeparateShaders: 0
+  ShowShaderStripping: 1
+  StripFogNone: 0
+  StripFogLinear: 1
+  StripFogExp: 0
+  StripFogExp2: 1
+  StripInstancing: 0
+  StripLightmapPlain: 1
+  StripLightmapDirCombined: 1
+  StripLightmapDynamicPlain: 1
+  StripLightmapDynamicDirCombined: 1
+  StripLightmapShadowMask: 1
+  StripLightmapSubtractive: 1
+  Objects:
+  - {fileID: 1775406099119076, guid: 379785de5e39005469c875710d3cc5a7, type: 3}
+  - {fileID: 100000, guid: 1f24645389770554fba328803373f5f0, type: 3}
+  - {fileID: 8276556134045958990, guid: 9f7503f304119394391e09d0ef814f92, type: 3}
+  - {fileID: 4745279494088035346, guid: 861ac4bdaa9fe5f49995fb5137eabd47, type: 3}
+  - {fileID: 8300000, guid: f75b2af20a3ed5743a1255c088f6ebe8, type: 3}

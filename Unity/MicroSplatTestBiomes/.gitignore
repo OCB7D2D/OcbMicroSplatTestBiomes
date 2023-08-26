@@ -1,0 +1,14 @@
+*.sln
+*.csproj
+.vsconfig
+Temp/
+UserSettings/
+ProjectSettings/
+Packages/
+PackageCache/
+obj/
+Logs/
+Library/
+.*/
+
+Assets/TestBiomes/TestBiomes_*
