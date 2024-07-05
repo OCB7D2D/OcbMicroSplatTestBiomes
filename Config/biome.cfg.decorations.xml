@@ -3,8 +3,8 @@
 		<!-- *** Decorations Main  -->
 		<decorations>
 			<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3"/>
-			<decoration type="block" blockname="rockResource" prob=".00033" rotatemax="3"/>
-			<decoration type="block" blockname="rockResource02" prob=".00033" rotatemax="3"/>
+			<decoration type="block" blockname="resourceRock01" prob=".00033" rotatemax="3"/>
+			<decoration type="block" blockname="resourceRock02" prob=".00033" rotatemax="3"/>
 			<decoration type="block" blockname="cntForestRandomLootHelper" prob="0.00025"/>
 			<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7"/>
 			<decoration type="prefab" name="rock_form01" prob=".001" rotatemax="7"/>

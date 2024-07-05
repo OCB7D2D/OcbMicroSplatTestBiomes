@@ -5,7 +5,7 @@
 
 	<!-- add gold ore vein if voxel mod is found -->
 	<modif condition="OcbMicroSplatOreVoxels">
-		<include
+		<modinc
 			path="biome.tmpl.xml"
 			tmpl-mapcolor="#80FFFF"
 			tmpl-biome-id="41"
@@ -21,7 +21,7 @@
 		/>
 	</modif>
 	<modelse>
-		<include
+		<modinc
 			path="biome.tmpl.xml"
 			tmpl-mapcolor="#80FFFF"
 			tmpl-biome-id="41"
@@ -37,7 +37,7 @@
 		/>
 	</modelse>
 
-	<include
+	<modinc
 		path="biome.tmpl.xml"
 		tmpl-mapcolor="#FF6600"
 		tmpl-biome-id="42"
@@ -52,7 +52,7 @@
 		tmpl-map-only="Test Biomes"
 	/>
 
-	<include
+	<modinc
 		path="biome.tmpl.xml"
 		tmpl-mapcolor="#FF40FF"
 		tmpl-biome-id="43"
