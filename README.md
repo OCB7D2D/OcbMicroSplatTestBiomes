@@ -6,7 +6,6 @@ This mod includes a custom map, named "Test Biomes", that consists
 of 8 different biomes. The 5 vanilla biomes and 3 new custom ones.
 I made no effort to customize biome foliage (plants, trees etc).
 
-
 ![Test Biomes Map](Screens/test-biomes-map.jpg)
 
 You need to disable EAC to use this mod!
@@ -22,6 +21,11 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 ![Custom Pasture Biome](Screens/in-game-pasture.jpg)
 
 ## Changelog
+
+### Version 0.2.0
+
+- First compatibility with V1.0 (exp)
+- Bumped unity version to 2022.3.29f1
 
 ### Version 0.1.0
 
