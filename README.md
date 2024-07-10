@@ -22,6 +22,10 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 
 ## Changelog
 
+### Version 0.2.1
+
+- Fix missing resource bundle
+
 ### Version 0.2.0
 
 - First compatibility with V1.0 (exp)
