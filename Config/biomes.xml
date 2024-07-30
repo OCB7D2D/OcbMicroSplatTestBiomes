@@ -1,4 +1,4 @@
-<configs patcher-version="5">
+<configs patcher-version="6">
 	<!-- Using new advanded feature of my custom dynamic xml patcher -->
 	<!-- check the referenced includes by `path` and you should get the idea -->
 	<!-- otherwise you can always just check the `ConfigsDump` to see it flat -->

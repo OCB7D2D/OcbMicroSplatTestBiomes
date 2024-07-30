@@ -1,4 +1,4 @@
-<configs patcher-version="5">
+<configs patcher-version="6">
 	<append xpath="/worldgeneration/biomes">
 		<!-- Define new biome id for test biome -->
 		<!-- Hock new ids up in worldglobal.xml -->
