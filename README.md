@@ -22,6 +22,12 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 
 ## Changelog
 
+### Version 0.3.0
+
+- Add two other biomes back to map
+- Add enemy spawning to new biomes
+- Adjust biome foliage a little
+
 ### Version 0.2.1
 
 - Fix missing resource bundle
