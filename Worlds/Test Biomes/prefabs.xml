@@ -573,7 +573,8 @@
   <decoration type="model" name="fastfood_05" position="-1549,34,-1782" rotation="3" />
   <decoration type="model" name="part_kiosk_foodtrailer_01" position="-1571,35,-1756" rotation="1" />
   <decoration type="model" name="rwg_tile_gateway_t" position="-1872,32,-1122" rotation="3" />
-  <decoration type="model" name="trader_joel" position="-1786,34,-1077" rotation="3" />
+  <decoration type="model" name="trader_joel" position="-2013,34,1663" rotation="0" />
+  <decoration type="model" name="trader_jen" position="-1786,33,-1077" rotation="3" />
   <decoration type="model" name="part_driveway_gateway_02" position="-1788,34,-1058" rotation="3" />
   <decoration type="model" name="part_survivor_camp_02" position="-1866,34,-992" rotation="0" />
   <decoration type="model" name="part_semi_truck" position="-1794,35,-1009" rotation="0" />
@@ -1791,7 +1792,6 @@
   <decoration type="model" name="part_lake_raft" position="-1472,23,776" rotation="2" />
   <decoration type="model" name="part_highway_transition" position="-1506,34,820" rotation="2" />
   <decoration type="model" name="rwg_tile_gateway_straight4" position="-2022,29,1578" rotation="3" />
-  <decoration type="model" name="trader_jen" position="-2013,33,1663" rotation="0" />
   <decoration type="model" name="part_driveway_gateway_01" position="-1999,34,1661" rotation="0" />
   <decoration type="model" name="part_driveway_gateway_01" position="-1971,34,1661" rotation="0" />
   <decoration type="model" name="part_highway_transition" position="-2022,34,1644" rotation="3" />
