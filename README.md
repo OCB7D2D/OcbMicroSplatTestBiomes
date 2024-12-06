@@ -22,6 +22,10 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 
 ## Changelog
 
+### Version 0.3.1
+
+- Add ids to biome spawns for V1.2 compatibility
+
 ### Version 0.3.0
 
 - Add two other biomes back to map

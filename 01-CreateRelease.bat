@@ -39,7 +39,7 @@ xcopy "Worlds\Test Biomes\splat4.png" "build\%NAME%\Worlds\Test Biomes\"
 
 cd build
 echo Packaging %NAME%-%VERSION%.zip
-powershell Compress-Archive %NAME% %NAME%-%VERSION%.zip -Force
+powershell Compress-Archive %NAME% %NAME%-%VERSION%-V1.2.zip -Force
 cd ..
 
 SET RV=%ERRORLEVEL%
