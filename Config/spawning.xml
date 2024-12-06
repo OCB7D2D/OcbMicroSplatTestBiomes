@@ -3,51 +3,51 @@
 
 		<!-- *** PINE_FOREST_SPAWNS -->
 		<biome name="test_biome_pasture">
-			<spawn maxcount="1" respawndelay="2.9" time="Day" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
-			<spawn maxcount="1" respawndelay="3.3" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+			<spawn id="tbp01" maxcount="1" respawndelay="2.9" time="Day" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+			<spawn id="tbp02" maxcount="1" respawndelay="3.3" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
 
-			<spawn maxcount="2" respawndelay="0.3" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
-			<spawn maxcount="3" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbp03" maxcount="2" respawndelay="0.3" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbp04" maxcount="3" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
 
-			<spawn maxcount="3" respawndelay="0.3" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
-			<spawn maxcount="3" respawndelay="0.1" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
+			<spawn id="tbp05" maxcount="3" respawndelay="0.3" time="Day" entitygroup="ZombiesForestDowntown" tags="downtown" />
+			<spawn id="tbp06" maxcount="3" respawndelay="0.1" time="Night" entitygroup="ZombiesForestDowntownNight" tags="downtown" />
 
-			<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="3.2" time="Night" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
+			<spawn id="tbp07" maxcount="2" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+			<spawn id="tbp08" maxcount="1" respawndelay="1" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
+			<spawn id="tbp09" maxcount="1" respawndelay="3.2" time="Night" entitygroup="EnemyAnimalsForest" spawnDeadChance="0" />
 		</biome>
 
 		<!-- *** BURNT_FOREST_SPAWNS -->
 		<biome name="test_biome_grass">
-			<spawn maxcount="1" respawndelay="2.8" time="Day" entitygroup="ZombiesBurntForest" />
-			<spawn maxcount="1" respawndelay="3.2" time="Night" entitygroup="ZombiesNight" />
+			<spawn id="tbg01" maxcount="1" respawndelay="2.8" time="Day" entitygroup="ZombiesBurntForest" />
+			<spawn id="tbg02" maxcount="1" respawndelay="3.2" time="Night" entitygroup="ZombiesNight" />
 
-			<spawn maxcount="3" respawndelay="0.25" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
-			<spawn maxcount="4" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbg03" maxcount="3" respawndelay="0.25" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbg04" maxcount="4" respawndelay="0.15" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
 
-			<spawn maxcount="3" respawndelay="0.15" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
-			<spawn maxcount="4" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+			<spawn id="tbg05" maxcount="3" respawndelay="0.15" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+			<spawn id="tbg06" maxcount="4" respawndelay="0.1" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
 
-			<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="1.1" time="Any" entitygroup="EnemyAnimalsBurntForestAny" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsBurntForestNight" spawnDeadChance="0" />
+			<spawn id="tbg07" maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+			<spawn id="tbg08" maxcount="1" respawndelay="1.1" time="Any" entitygroup="EnemyAnimalsBurntForestAny" spawnDeadChance="0" />
+			<spawn id="tbg09" maxcount="1" respawndelay="1" time="Night" entitygroup="WildGameForestNight" spawnDeadChance="0" />
+			<spawn id="tbg10" maxcount="1" respawndelay="1.1" time="Night" entitygroup="EnemyAnimalsBurntForestNight" spawnDeadChance="0" />
 		</biome>
 
 		<!-- *** DESERT_SPAWNS -->
 		<biome name="test_biome_dirt">
-			<spawn maxcount="1" respawndelay="2.7" time="Any" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
-			<spawn maxcount="1" respawndelay="2.1" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
+			<spawn id="tbd01" maxcount="1" respawndelay="2.7" time="Any" entitygroup="ZombiesAll" notags="commercial,industrial,downtown" />
+			<spawn id="tbd02" maxcount="1" respawndelay="2.1" time="Night" entitygroup="ZombiesNight" notags="commercial,industrial,downtown" />
 			
-			<spawn maxcount="3" respawndelay="0.2" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
-			<spawn maxcount="3" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbd03" maxcount="3" respawndelay="0.2" time="Day" entitygroup="ZombiesAll" tags="commercial,industrial" notags="downtown" />
+			<spawn id="tbd04" maxcount="3" respawndelay="0.1" time="Night" entitygroup="ZombiesNight" tags="commercial,industrial" notags="downtown" />
 
-			<spawn maxcount="3" respawndelay="0.2" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
-			<spawn maxcount="4" respawndelay="0.09" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
+			<spawn id="tbd05" maxcount="3" respawndelay="0.2" time="Day" entitygroup="ZombiesDowntown" tags="downtown" />
+			<spawn id="tbd06" maxcount="4" respawndelay="0.09" time="Night" entitygroup="ZombiesDowntown" tags="downtown" />
 			
-			<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="3.5" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" />
-			<spawn maxcount="1" respawndelay="3.5" time="Night" entitygroup="EnemyAnimalsDesertNight" spawnDeadChance="0" />
+			<spawn id="tbd07" maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+			<spawn id="tbd08" maxcount="1" respawndelay="3.5" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0" />
+			<spawn id="tbd09" maxcount="1" respawndelay="3.5" time="Night" entitygroup="EnemyAnimalsDesertNight" spawnDeadChance="0" />
 		</biome>
 
 	</append>
