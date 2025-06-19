@@ -27,7 +27,9 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 0}
     IsRoughness: 0
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: 293ad31f32c97064284aa0a22f627ad1, type: 3}
+    Emission: {fileID: 0}
   - Albedo: {fileID: 2800000, guid: 74d56565228e3b2428124a1a37b6c963, type: 3}
     Height: {fileID: 2800000, guid: ec2c8398fc2bee345aa37972408106ab, type: 3}
     Normal: {fileID: 2800000, guid: 21daba3b1d873864ea309c94f629dd73, type: 3}
@@ -37,7 +39,9 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: 0722084428889b14096834f13e7f5a8a, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: 0a1f36f787ccb7e43a21fe7d5cb998c4, type: 3}
+    Emission: {fileID: 0}
   - Albedo: {fileID: 2800000, guid: 40a250f45dd5e4c46933af46be5b5d13, type: 3}
     Height: {fileID: 2800000, guid: 6e88807d8d653424f9a3f335319801bb, type: 3}
     Normal: {fileID: 2800000, guid: 4517bccd18d2f704183f42b04f989342, type: 3}
@@ -47,7 +51,9 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: c394529d7c806f6428158e93245857b2, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: d33008dd2ebb7d34aabeff1ae137a1ae, type: 3}
+    Emission: {fileID: 0}
   - Albedo: {fileID: 2800000, guid: 8701831cffde49243921cb6a6035d2e4, type: 3}
     Height: {fileID: 2800000, guid: c6373f9629ff79347a8144756fa86930, type: 3}
     Normal: {fileID: 2800000, guid: 1e31251c1afbbfa44812344c4d6b638e, type: 3}
@@ -57,4 +63,6 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: 1a6f76ff7f96ef4479cb919d2eca4d81, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: cd85bd91ce911e94686f474f0ab1f3b2, type: 3}
+    Emission: {fileID: 0}

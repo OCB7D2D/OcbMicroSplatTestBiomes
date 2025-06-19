@@ -155,8 +155,41 @@
 		<ParticleEffect prefab="#@modfolder:Resources/Particles.unity3d?p_dustdevil" ChunkMargin="12"/>
 	</append>
 
-	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest' or
-				@name='test_biome_grass' or @name='test_biome_pasture']/weather[@name='default']">
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest' or @name='test_biome_grass' or @name='test_biome_pasture']/weather[@name='default']">
 		<ParticleEffect prefab="#@modfolder:Resources/Particles.unity3d?p_fireflies" ChunkMargin="9"/>
+	</append>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='test_biome_grass' or @name='test_biome_pasture']">
+		<subbiome noise=".009, 0, .25">
+			<layers>
+				<layer depth="1" blockname="terrDirt"/>
+				<layer depth="2" blockname="terrDirt"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="block" blockname="treeShortGrass" prob=".65"/>
+			</decorations>
+		</subbiome>
+	</append>
+
+	<append xpath="/worldgeneration/biomes/biome[@name='test_biome_grass' or @name='pine_forest']">
+		<subbiome noise=".005, 0, .25">
+			<layers>
+				<layer depth="1" blockname="ocbTerrDirt"/>
+				<layer depth="2" blockname="ocbTerrDirt"/>
+				<layer depth="*" blockname="terrStone">
+					<resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+					<resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+				</layer>
+				<layer depth="3" blockname="terrBedrock"/>
+			</layers>
+			<decorations>
+				<decoration type="block" blockname="treeShortGrass" prob=".35"/>
+			</decorations>
+		</subbiome>
 	</append>
 </configs>

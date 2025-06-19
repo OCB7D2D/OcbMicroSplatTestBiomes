@@ -22,6 +22,10 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 
 ## Changelog
 
+### Version 0.4.0
+
+- Update for 7D2D V2.0 stable
+
 ### Version 0.3.1
 
 - Add ids to biome spawns for V1.2 compatibility

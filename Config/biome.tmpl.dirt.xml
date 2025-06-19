@@ -111,9 +111,8 @@
 			<spectrum name="DirtyRain"/>
 		</weather>
 
-
 		<!-- Vegetation Hot-Spot -->
-		<subbiome prob="0.1775">
+		<subbiome noise=".021, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -143,7 +142,7 @@
 		</subbiome>
 
 		<!-- Rock Hot-Spot -->
-		<subbiome prob="0.115">
+		<subbiome noise=".014, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -168,7 +167,7 @@
 		</subbiome>
 
 		<!-- Cacti Hot-Spot -->
-		<subbiome prob="0.0775">
+		<subbiome noise=".009, 0, .05">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -203,7 +202,6 @@
 			</decorations>
 		</subbiome>
 
-
 		<!-- *** Decorations Main  -->
 		<decorations>
 			<decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".00077" rotatemax="3"/>
@@ -230,5 +228,4 @@
 			<decoration type="block" blockname="treeOakSml01" prob="0.00005" rotatemax="7"/>
 		</decorations>
 	</append>
-
 </configs>

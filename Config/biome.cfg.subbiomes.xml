@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/worldgeneration/biomes/biome[@name='{{biome-name}}']">
 		<!-- *** Sub Biome: Heavy Short Grass -->
-		<subbiome prob="0.27">
+		<subbiome noise=".041, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -25,7 +25,7 @@
 		</subbiome>
 
 		<!-- *** Sub Biome: Clustered Flowers and Boulders -->
-		<subbiome prob="0.31">
+		<subbiome noise=".0095, 0, .21">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -50,7 +50,7 @@
 		</subbiome>
 
 		<!-- *** Ore Sub Biome: coalOre -->
-		<subbiome prob="0.392">
+		<subbiome noise=".041, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -98,7 +98,7 @@
 		</subbiome>
 
 		<!-- *** Ore Sub Biome: potassiumNitrate -->
-		<subbiome prob="0.412">
+		<subbiome noise=".041, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
@@ -146,7 +146,7 @@
 		</subbiome>
 
 		<!-- *** Ore Sub Biome: leadOre -->
-		<subbiome prob="0.442">
+		<subbiome noise=".041, 0, .18">
 			<layers>
 				<layer depth="1" blockname="{{block}}"/>
 				<layer depth="3" blockname="terrDirt"/>
