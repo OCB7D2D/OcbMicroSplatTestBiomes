@@ -2,13 +2,13 @@
 	<append xpath="/worldglobal">
 		<!-- Setup voxels to use certain textures -->
 		<!-- Can optionally blend multiple textures -->
-		<microsplat-voxel name="voxel1">
+		<microsplat-voxel name="voxel1" blend="0.4">
 			<texture name="custom1" weight="1"/>
 		</microsplat-voxel>
-		<microsplat-voxel name="voxel2">
+		<microsplat-voxel name="voxel2" blend="0.1">
 			<texture name="custom2" weight="1"/>
 		</microsplat-voxel>
-		<microsplat-voxel name="voxel3">
+		<microsplat-voxel name="voxel3" blend="0.1">
 			<texture name="custom3" weight="1"/>
 		</microsplat-voxel>
 

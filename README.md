@@ -22,6 +22,10 @@ End-users should download [OcbMicroSplat from Nexusmods][3].
 
 ## Changelog
 
+### Version 0.4.1
+
+- Add blend option for V2.6 MicroSplat mod
+
 ### Version 0.4.0
 
 - Update for 7D2D V2.0 stable
